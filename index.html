@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Network Analysis with GeoJSON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+    <script src="https://unpkg.com/leaflet.pm@latest/dist/leaflet.pm.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4-src.js"></script>
+</head>
+
+<body>
+    <div id="map" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div id="leftBottom" style="position: fixed; bottom: 10px; left:10px;">
+        <button onclick="startNetworkAnalysis();" class="btn btn-sm btn-default">Start Network Analysis</button>
+        <button onclick="showSnapedLines();" class="btn btn-sm btn-default" id="dis1" disabled>Show Snapped Lines</button>
+        <button onclick="showUnSnapedLines();" class="btn btn-sm btn-default" id="dis2" disabled>Show UnSnapped Lines</button>
+        <a href="index.html" class="btn btn-sm btn-default">Refresh</a>
+    </div>
+</body>
+</html>
+<script src="js/sampleGeoJSON.js"></script>
+<script src="js/myleaflet.js"></script>
+<script src="js/geojson-network-analysis.js"></script>
